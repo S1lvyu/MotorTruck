@@ -16,14 +16,14 @@ window.addEventListener("load", showOnScroll);
 const form = document.getElementById("contact-form");
 const successMsg = document.getElementById("success-msg");
 const langData = {
-  ro: { flag: "/assets/flags/ro.png", code: "RO" },
-  en: { flag: "/assets/flags/us.png", code: "EN" },
-  fr: { flag: "/assets/flags/fr.png", code: "FR" },
-  es: { flag: "/assets/flags/es.png", code: "ES" },
-  it: { flag: "/assets/flags/it.png", code: "IT" },
-  de: { flag: "/assets/flags/de.png", code: "DE" },
-  bg: { flag: "/assets/flags/bg.png", code: "BG" },
-  hu: { flag: "/assets/flags/hu.png", code: "HU" },
+  ro: { flag: "assets/flags/ro.png", code: "RO" },
+  en: { flag: "assets/flags/us.png", code: "EN" },
+  fr: { flag: "assets/flags/fr.png", code: "FR" },
+  es: { flag: "assets/flags/es.png", code: "ES" },
+  it: { flag: "assets/flags/it.png", code: "IT" },
+  de: { flag: "assets/flags/de.png", code: "DE" },
+  bg: { flag: "assets/flags/bg.png", code: "BG" },
+  hu: { flag: "assets/flags/hu.png", code: "HU" },
 };
 if (form) {
   form.addEventListener("submit", async function (e) {
