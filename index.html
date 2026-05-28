@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motor Truck</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero" data-key="btn_acasa">Acasă</a></li>
+            <li><a href="#about" data-key="btn_despre">Despre</a></li>
+            <li><a href="#services" data-key="btn_servicii">Servicii</a></li>
+            <li><a href="#fleet" data-key="btn_flota">Flotă</a></li>
+            <li><a href="#advantages" data-key="btn_avantaje">Avantaje</a></li>
+            <li><a href="#contact" data-key="btn_contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="btn primary-btn" data-key="btn_cta"
+          >Devino Partenerul nostru</a
+        >
+        <div class="lang-dropdown">
+          <button class="lang-btn" id="langBtn">
+            <span class="lang-content">
+              <img src="/assets/flags/ro.png" class="flag" />
+              RO ▾
+            </span>
+          </button>
+          <div class="lang-menu" id="langMenu">
+            <button onclick="setLanguage('ro')">
+              <img src="/assets/flags/ro.png" class="flag" />
+              <span>Română</span>
+            </button>
+
+            <button onclick="setLanguage('en')">
+              <img src="/assets/flags/us.png" class="flag" />
+              <span>English</span>
+            </button>
+
+            <button onclick="setLanguage('fr')">
+              <img src="/assets/flags/fr.png" class="flag" />
+              <span>Français</span>
+            </button>
+
+            <button onclick="setLanguage('es')">
+              <img src="/assets/flags/es.png" class="flag" />
+              <span>Español</span>
+            </button>
+
+            <button onclick="setLanguage('it')">
+              <img src="/assets/flags/it.png" class="flag" />
+              <span>Italiano</span>
+            </button>
+
+            <button onclick="setLanguage('de')">
+              <img src="/assets/flags/de.png" class="flag" />
+              <span>Deutsch</span>
+            </button>
+
+            <button onclick="setLanguage('bg')">
+              <img src="/assets/flags/bg.png" class="flag" />
+              <span>Български</span>
+            </button>
+
+            <button onclick="setLanguage('hu')">
+              <img src="/assets/flags/hu.png" class="flag" />
+              <span>Magyar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text fade-in">
+          <h1 data-key="hero_title">
+            Partenerul tau de incredere in transport
+          </h1>
+
+          <p data-key="hero_text">
+            Curse naționale și internaționale prin dispecerat, bursă
+            transporturi și contracte dedicate.
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="#contact"
+              class="btn primary-btn"
+              data-key="hero_solicita_oferta"
+              >Solicită ofertă</a
+            >
+            <a href="#contact" class="btn secondary-btn" data-key="hero_contact"
+              >Contact rapid</a
+            >
+          </div>
+
+          <div class="hero-features">
+            <span data-key="hero_span1">✓ Disponibilitate rapidă</span>
+            <span data-key="hero_span2">✓ Monitorizare transport</span>
+            <span data-key="hero_span3">✓ Șoferi experimentați</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about section-padding">
+      <div class="container about-grid">
+        <div class="about-image fade-in">
+          <img src="assets/hero.jpg" alt="Transport Logistic" />
+        </div>
+
+        <div class="about-text fade-in">
+          <h2 data-key="about_title">Despre Motor Truck</h2>
+
+          <p data-key="about_text1">
+            Motor Truck oferă servicii de transport rapide și eficiente pentru
+            clienți din România și Europa.
+          </p>
+
+          <p data-key="about_text2">
+            Colaborăm cu dispeceri, operăm prin bursă de transport și dezvoltăm
+            parteneriate stabile pentru curse dedicate și contracte pe termen
+            lung.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-card" data-key="about_card1">
+              ✓ Curse internaționale
+            </div>
+            <div class="feature-card" data-key="about_card2">
+              ✓ Disponibilitate 24/7
+            </div>
+            <div class="feature-card" data-key="about_card3">
+              ✓ Flotă modernă
+            </div>
+            <div class="feature-card" data-key="about_card4">
+              ✓ Livrare rapidă
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2 data-key="services_title">Serviciile noastre</h2>
+          <p data-key="services_text">
+            Transport eficient și flexibil pentru orice tip de colaborare.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <h3 data-key="services_card1_title">Transport expres</h3>
+            <p data-key="services_card1_text">
+              Livrăm rapid și sigur mărfuri generale în regim expres, cu timp
+              minim de răspuns.
+            </p>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 data-key="services_card2_title">
+              Curse prin bursă transporturi
+            </h3>
+            <p data-key="services_card2_text">
+              Operăm eficient prin platforme de transport pentru optimizarea
+              curselor.
+            </p>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 data-key="services_card3_title">Contracte dedicate</h3>
+            <p data-key="services_card3_text">
+              Preluăm colaborări stabile pentru distribuție și transport
+              regulat.
+            </p>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 data-key="services_card4_title">Transport internațional</h3>
+            <p data-key="services_card4_text">
+              Asigurăm transport sigur și monitorizat pentru curse externe în
+              Europa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+
+    <section class="workflow section-padding">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2 data-key="workflow_title">Cum lucrăm</h2>
+        </div>
+        <div class="secondary-title fade-in">
+          <h2 data-key="workflow_subtitle1">Livreaza marfa cu noi</h2>
+        </div>
+        <div class="workflow-grid">
+          <div class="workflow-card fade-in">
+            <span>1</span>
+            <h3 data-key="workflow_card1_title">Trimite solicitarea</h3>
+            <p data-key="workflow_card1_text">
+              Ne contactezi rapid telefonic sau online.
+            </p>
+          </div>
+
+          <div class="workflow-card fade-in">
+            <span>2</span>
+            <h3 data-key="workflow_card2_title">Stabilim oferta</h3>
+            <p data-key="workflow_card2_text">
+              Primești rapid prețul și disponibilitatea.
+            </p>
+          </div>
+
+          <div class="workflow-card fade-in">
+            <span>3</span>
+            <h3 data-key="workflow_card3_title">Preluăm marfa</h3>
+            <p data-key="workflow_card3_text">
+              Șoferii noștri ridică marfa în siguranță.
+            </p>
+          </div>
+
+          <div class="workflow-card fade-in">
+            <span>4</span>
+            <h3 data-key="workflow_card4_title">Livrăm rapid</h3>
+            <p data-key="workflow_card4_text">
+              Transportul este monitorizat până la destinație.
+            </p>
+          </div>
+        </div>
+        <div class="secondary-title fade-in">
+          <h2 data-key="workflow_subtitle2">Devino partenerul nostru</h2>
+        </div>
+        <div class="workflow-grid">
+          <div class="workflow-card fade-in">
+            <span>1</span>
+            <h3 data-key="workflow_card5_title">Trimite solicitarea</h3>
+            <p data-key="workflow_card5_text">
+              Ne contactezi rapid telefonic sau online.
+            </p>
+          </div>
+
+          <div class="workflow-card fade-in">
+            <span>2</span>
+            <h3 data-key="workflow_card6_title">Stabilim oferta</h3>
+            <p data-key="workflow_card6_text">
+              Primești rapid oferta noastra și disponibilitatea.
+            </p>
+          </div>
+
+          <div class="workflow-card fade-in">
+            <span>3</span>
+            <h3 data-key="workflow_card7_title">Lucram impreuna</h3>
+            <p data-key="workflow_card7_text">
+              Totul este stabilit si putem incepe colaborarea imediat
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLEET -->
+
+    <section id="fleet" class="fleet section-padding">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2 data-key="fleet_title">Flota noastră</h2>
+        </div>
+
+        <div class="fleet-grid">
+          <div class="fleet-card fade-in">
+            <img src="assets/sprinter.jpg" alt="Mercedes Sprinter" />
+            <div class="fleet-content">
+              <h3 data-key="fleet_card1_title">Fiat Ducato</h3>
+              <ul>
+                <li data-key="fleet_card1_text1">✓ GPS Tracking</li>
+                <li data-key="fleet_card1_text2">✓ Asigurare marfă</li>
+                <li data-key="fleet_card1_text3">✓ Curse internaționale</li>
+                <li data-key="fleet_card1_text4">✓ Volum mare</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="fleet-card fade-in">
+            <img src="assets/transit.jpg" alt="Ford Transit" />
+            <div class="fleet-content">
+              <h3 data-key="fleet_card2_title">Ford Transit</h3>
+              <ul>
+                <li data-key="fleet_card2_text1">✓ Rapid și eficient</li>
+                <li data-key="fleet_card2_text2">✓ Consum optim</li>
+                <li data-key="fleet_card2_text3">✓ Livrări expres</li>
+                <li data-key="fleet_card2_text4">✓ Curse dedicate</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="fleet-card fade-in">
+            <img src="assets/master.jpg" alt="Renault Master" />
+            <div class="fleet-content">
+              <h3 data-key="fleet_card3_title">Renault Master</h3>
+              <ul>
+                <li data-key="fleet_card3_text1">✓ Curse externe</li>
+                <li data-key="fleet_card3_text2">✓ Spațiu mare încărcare</li>
+                <li data-key="fleet_card3_text3">✓ Siguranță ridicată</li>
+                <li data-key="fleet_card3_text4">✓ Disponibilitate rapidă</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+
+    <section id="advantages" class="advantages section-padding">
+      <div class="container advantages-grid">
+        <div class="advantages-text fade-in">
+          <h2 data-key="advantages_title">De ce să alegi Motor Truck</h2>
+
+          <ul>
+            <li data-key="advantages_text1">✓ Comunicare rapidă</li>
+            <li data-key="advantages_text2">✓ Livrări la timp</li>
+            <li data-key="advantages_text3">✓ Flexibilitate</li>
+            <li data-key="advantages_text4">✓ Disponibilitate non-stop</li>
+            <li data-key="advantages_text5">✓ Experiență în logistică</li>
+            <li data-key="advantages_text6">✓ Seriozitate și transparență</li>
+          </ul>
+        </div>
+
+        <div class="stats-grid fade-in">
+          <div class="stat-card">
+            <h3>10000+</h3>
+            <p data-key="stats_text1">Curse finalizate</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>98%</h3>
+            <p data-key="stats_text2">Livrări la timp</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>24/7</h3>
+            <p data-key="stats_text3">Suport și comunicare</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials section-padding">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2 data-key="testimonials_title">Ce spun clienții</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card fade-in">
+            <p>
+              “Colaborare excelentă și comunicare rapidă pe toată durata
+              transportului.”
+            </p>
+            <h4>- Partener Logistic</h4>
+          </div>
+
+          <div class="testimonial-card fade-in">
+            <p>
+              “Seriozitate și punctualitate. Recomand pentru transport
+              internațional.”
+            </p>
+            <h4>- Client Business</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVERAGE -->
+
+    <section class="coverage section-padding">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2 data-key="coverage_title">Acoperire transport</h2>
+
+          <p data-key="coverage_text">
+            Operăm transporturi naționale și internaționale în principalele rute
+            europene.
+          </p>
+        </div>
+
+        <div class="countries fade-in">
+          <span>România</span>
+          <span>Germania</span>
+          <span>Franța</span>
+          <span>Italia</span>
+          <span>Belgia</span>
+          <span>Olanda</span>
+          <span>Austria</span>
+          <span>Ungaria</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta section-padding">
+      <div class="container cta-content fade-in">
+        <h2 data-key="cta_title">
+          Ai nevoie de un transport rapid ori vrei sa devii transportator?
+        </h2>
+
+        <p data-key="cta_text">
+          Contactează-ne acum și primești ofertă în cel mai scurt timp.
+        </p>
+
+        <a href="#contact" class="btn primary-btn" data-key="cta_btn">
+          Solicită ofertă
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact section-padding">
+      <div class="container contact-grid">
+        <div class="contact-form fade-in">
+          <h2 data-key="contact_title">Contactează-ne</h2>
+
+          <form id="contact-form">
+            <input type="text" name="nume" placeholder="Nume" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="telefon" placeholder="Telefon" />
+            <textarea name="mesaj" placeholder="Mesaj" required></textarea>
+
+            <button type="submit" class="btn primary-btn">Trimite mesaj</button>
+
+            <p
+              id="success-msg"
+              style="display: none; color: green; margin-top: 10px"
+              data-key="contact_succes"
+            >
+              Email trimis cu succes!
+            </p>
+          </form>
+        </div>
+
+        <div class="contact-info fade-in">
+          <h2 data-key="contact_title2">Date contact</h2>
+
+          <a href="tel:+40770200218">
+            <p><strong>Telefon:</strong> +40 770200218</p></a
+          >
+          <a href="mailto:motortruckoffice@gmail.com?subject=Solicitare oferta">
+            <p><strong>Email:</strong> motortruckoffice@gmail.com</p></a
+          >
+          <a href="https://wa.me/40770200218">
+            <p><strong>WhatsApp:</strong> +40 770200218</p></a
+          >
+          <p><strong>Program:</strong> Luni - Duminică / 24h</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+          <p data-key="footer_text">
+            Transport rapid și sigur pentru curse naționale și internaționale.
+          </p>
+        </div>
+
+        <div>
+          <h3 data-key="footer_title">Meniu rapid</h3>
+          <ul>
+            <li><a href="#hero" data-key="btn_acasa">Acasă</a></li>
+            <li><a href="#services" data-key="btn_servicii">Servicii</a></li>
+            <li><a href="#fleet" data-key="btn_flota">Flotă</a></li>
+            <li><a href="#contact" data-key="btn_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-key="footer_title2">Contact</h3>
+          <a href="tel:+40770200218">
+            <p><strong>Telefon:</strong> +40 770200218</p></a
+          >
+          <a href="mailto:motortruckoffice@gmail.com?subject=Solicitare oferta">
+            <p><strong>Email:</strong> motortruckoffice@gmail.com</p></a
+          >
+        </div>
+      </div>
+
+      <div class="copyright" data-key="footer_copyright">
+        © 2026 Motor Truck. Toate drepturile rezervate.
+      </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
